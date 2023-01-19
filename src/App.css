@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: black;
 }
 
 .App-logo {
@@ -36,4 +37,34 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.card-body{
+  background-color: black;
+  border-radius: 0px 0px 5px 5px;
+  color:rgb(183, 183, 183)
+}
+
+.navbar-dark {
+  background-color: rgb(37, 37, 37);
+  opacity: .9;
+}
+
+#tagline {
+  color: rgb(183, 183, 183);
+  size: 42px;
+}
+
+.site-footer{
+  margin-top: 24px;
+  border-top: solid 1px;
+  border-color: #00a99d
+}
+
+.image-card{
+  background-color:rgb(37, 37, 37);
+}
+
+h5{
+  color:rgb(183, 183, 183)
 }
