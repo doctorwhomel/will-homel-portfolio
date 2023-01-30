@@ -55,7 +55,6 @@ class ReactstrapImageGallery extends React.Component {
       <Container>
         <Row>
           <Col md={{ size: 10, offset: 1 }} className="thumbnail-gallery">
-            <h5 className="text-center my-3">Reactstrap Image Gallery </h5>
             <Row style={{ padding: "0px", margin: "0px" }}>
               {tempImagesArray.map((image, index) => (
                 <Col

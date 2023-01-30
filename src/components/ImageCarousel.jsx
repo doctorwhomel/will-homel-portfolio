@@ -50,16 +50,43 @@ class ImageCarousel extends React.Component {
   render() {
     const { images } = this.props;
     const { activeIndex } = this.state;
+
     const slides = images.map((image) => {
+      let mediaType;
+      if (image.albumId === 2) {
+        mediaType = (
+          <iframe
+            src={image.url}
+            id="ytplayer"
+            type="text/html"
+            width="720"
+            height="480"
+            alt={image.title}
+            title={image.title}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        );
+      } else {
+        mediaType = (
+          <img
+            src={image.url}
+            alt={image.title}
+            className="img-fluid"
+            style={{
+              maxHeight: "100vh",
+            }}
+          />
+        );
+      }
       return (
         <CarouselItem
           onExiting={() => this.setAnimating(true)}
           onExited={() => this.setAnimating(false)}
           key={image.id}
         >
-          <div className="d-flex justify-content-center">
-            <img src={image.url} alt={image.title} className="img-fluid" />
-          </div>
+          <div className="d-flex justify-content-center">{mediaType}</div>
         </CarouselItem>
       );
     });
