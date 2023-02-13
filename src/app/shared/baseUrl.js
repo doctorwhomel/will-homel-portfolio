@@ -1,1 +1,1 @@
-export const baseUrl = "https://doctorwhomel.github.io/will-homel-portfolio/";
+export const baseUrl = "http://localhost:3000/";
