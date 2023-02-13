@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/will-homel-portfolio/static/css/main.f26ecd07.css",
-    "main.js": "/will-homel-portfolio/static/js/main.b18c709a.js",
+    "main.js": "/will-homel-portfolio/static/js/main.8abede02.js",
     "static/media/jack_o_lantern_render.png": "/will-homel-portfolio/static/media/jack_o_lantern_render.f646c19e9a3c1d6156d2.png",
     "static/media/img_7177-baby.jpg": "/will-homel-portfolio/static/media/img_7177-baby.5e48b3e36b11e342b073.jpg",
     "static/media/floral-design-lotus-root-photo.jpg": "/will-homel-portfolio/static/media/floral-design-lotus-root-photo.96db12f4404f710b4969.jpg",
@@ -85,10 +85,10 @@
     "static/media/open-sans-latin-400italic.woff2": "/will-homel-portfolio/static/media/open-sans-latin-400italic.bb915319f59c02c348a6.woff2",
     "index.html": "/will-homel-portfolio/index.html",
     "main.f26ecd07.css.map": "/will-homel-portfolio/static/css/main.f26ecd07.css.map",
-    "main.b18c709a.js.map": "/will-homel-portfolio/static/js/main.b18c709a.js.map"
+    "main.8abede02.js.map": "/will-homel-portfolio/static/js/main.8abede02.js.map"
   },
   "entrypoints": [
     "static/css/main.f26ecd07.css",
-    "static/js/main.b18c709a.js"
+    "static/js/main.8abede02.js"
   ]
 }
