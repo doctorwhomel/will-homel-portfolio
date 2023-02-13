@@ -20,4 +20,24 @@ export const VIDEOS = [
     url: "https://www.youtube.com/embed/ysirgkM7Gtc",
     thumbnailUrl: "https://i.ytimg.com/vi_webp/ysirgkM7Gtc/maxresdefault.webp",
   },
+  {
+    albumId: 2,
+    id: 4,
+    title: "Trayvax Made in Bellingham",
+    url: "https://www.youtube.com/embed/6DD2erm_vNc",
+    thumbnailUrl: "https://i.ytimg.com/vi_webp/6DD2erm_vNc/maxresdefault.webp",
+  },
+  {
+    albumId: 2,
+    id: 5,
+    title: "Trayvax Summit Wallet",
+    url: "https://www.youtube.com/embed/crsQ7iIR14o",
+    thumbnailUrl: "https://i.ytimg.com/vi_webp/crsQ7iIR14o/maxresdefault.webp",
+  },
+  {
+    albumId: 2,
+    id: 6,
+    url: "https://www.youtube.com/embed/Brmh2IHvPGU",
+    thumbnailUrl: "https://i.ytimg.com/vi_webp/Brmh2IHvPGU/maxresdefault.webp",
+  },
 ];

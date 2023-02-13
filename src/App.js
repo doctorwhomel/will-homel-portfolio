@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import PhotosPage from "./pages/PhotosPage";
 import VideosPage from "./pages/VideosPage";
+import GamesPage from "./pages/GamesPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/photos" element={<PhotosPage />} />
         <Route path="/videos" element={<VideosPage />} />
+        <Route path="/games" element={<GamesPage />} />
       </Routes>
       <Footer />
     </div>

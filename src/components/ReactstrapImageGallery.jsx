@@ -50,6 +50,8 @@ class ReactstrapImageGallery extends React.Component {
     const { isModalOpen, images, imagesToShow, currentIndex } = this.state;
     const tempImagesArray = images.slice(0, imagesToShow); //temporary array
     const hasMore = images.length !== 0 ? images.length - imagesToShow : 0;
+    const typeMd = images.length < 8 ? "6" : "3";
+    console.log(typeMd);
 
     return (
       <Container>
@@ -58,7 +60,8 @@ class ReactstrapImageGallery extends React.Component {
             <Row style={{ padding: "0px", margin: "0px" }}>
               {tempImagesArray.map((image, index) => (
                 <Col
-                  md="3"
+                  xs={6}
+                  md={typeMd}
                   className="m-0 p-0"
                   key={index}
                   onClick={() => this.showModalImage(index)}
@@ -85,10 +88,26 @@ class ReactstrapImageGallery extends React.Component {
           className="modal-xl"
           isOpen={isModalOpen}
           toggle={this.toggleModal}
+          style={{
+            borderRadius: "0px 0px 5px 5px",
+          }}
         >
-          <ModalBody style={{ backgroundColor: "rgb(37, 37, 37)" }}>
+          <ModalHeader
+            style={{
+              backgroundColor: "#00a99d",
+              border: "none",
+              maxHeight: "48px",
+            }}
+            toggle={() => this.toggleModal()}
+          ></ModalHeader>
+          <ModalBody
+            style={{
+              backgroundColor: "rgb(37, 37, 37)",
+              borderRadius: "0px 0px 2px 2px",
+            }}
+          >
             <Row>
-              <Col md="12">
+              <Col md="6">
                 <ImageCarousel images={images} currentIndex={currentIndex} />
               </Col>
             </Row>
