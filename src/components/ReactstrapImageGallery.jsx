@@ -2,7 +2,6 @@ import React from "react";
 import {
   Modal,
   ModalHeader,
-  ModalFooter,
   ModalBody,
   Col,
   Row,
@@ -10,7 +9,6 @@ import {
   Card,
   CardImgOverlay,
   CardImg,
-  Button,
 } from "reactstrap";
 
 import ImageCarousel from "./ImageCarousel";

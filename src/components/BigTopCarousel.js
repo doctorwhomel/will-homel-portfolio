@@ -5,12 +5,7 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
-  CarouselControlProps,
 } from "reactstrap";
-import FeatImg1 from "../app/assets/img/Sirens-Shanty-Screenshot-wide.jpg";
-import FeatImg2 from "../app/assets/img/Sirens-Shanty-Screenshot-wide.jpg";
-import FeatImg3 from "../app/assets/img/Sirens-Shanty-Screenshot-wide.jpg";
 import { selectAllFeatured } from "../features/games/gamesSlice";
 import FeaturedGameCard from "../display/FeaturedGamesCard";
 

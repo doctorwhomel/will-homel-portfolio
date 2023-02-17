@@ -10,7 +10,6 @@ import {
   CardTitle,
 } from "reactstrap";
 import homel_new_logo_raster from "../app/assets/img/homel_new_logo_raster.png";
-import dev_X_create from "../app/assets/img/dev_X_create.png";
 import jack_o_lantern_render from "../app/assets/img/jack_o_lantern_render.png";
 import flavorists_dilemma_will_homel_bellingham_comedy_film from "../app/assets/img/flavorists_dilemma_will_homel_bellingham_comedy_film.jpg";
 import pupper from "../app/assets/img/pupper.jpg";

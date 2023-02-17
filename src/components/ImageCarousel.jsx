@@ -4,8 +4,6 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
-  Button,
 } from "reactstrap";
 
 class ImageCarousel extends React.Component {
