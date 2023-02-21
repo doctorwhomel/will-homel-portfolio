@@ -72,7 +72,7 @@ class ImageCarousel extends React.Component {
           <img
             src={image.url}
             alt={image.title}
-            className="img-fluid"
+            className="img-fluid mx-auto"
             style={{
               maxHeight: "100vh",
             }}
@@ -85,7 +85,9 @@ class ImageCarousel extends React.Component {
           onExited={() => this.setAnimating(false)}
           key={image.id}
         >
-          <div className="d-flex justify-content-center">{mediaType}</div>
+          <div className="d-flex justify-content-center mx-auto">
+            {mediaType}
+          </div>
         </CarouselItem>
       );
     });

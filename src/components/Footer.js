@@ -1,4 +1,7 @@
 import { Container, Row, Col } from "reactstrap";
+import instaIcon from "../app/assets/img/5282544_camera_instagram_social-media_social-network_instagram-logo_icon.png";
+import linkedInIcon from "../app/assets/img/5282542_linkedin_network_social-network_linkedin-logo_icon.png";
+import tubeIcon from "../app/assets/img/5282548_play_player_video_youtube_youtuble-logo_icon.png";
 
 const Footer = () => {
   return (
@@ -13,22 +16,22 @@ const Footer = () => {
               Social
             </h5>
             <a
-              className="btn btn-social-icon btn-instagram"
+              className="btn btn-social-icon"
               href="http://instagram.com/doctorwhomel/"
             >
-              <i className="fa fa-instagram" />
+              <img src={instaIcon} alt="Instagram" />
             </a>{" "}
             <a
-              className="btn btn-social-icon btn-linkedin"
+              className="btn btn-social-icon"
               href="https://www.linkedin.com/in/will-homel/"
             >
-              <i className="fa fa-linkedin" />
+              <img src={linkedInIcon} alt="LinkedIn" />
             </a>{" "}
             <a
-              className="btn btn-social-icon btn-google"
+              className="btn btn-social-icon"
               href="https://www.youtube.com/@willhomel933"
             >
-              <i className="fa fa-youtube" />
+              <img src={tubeIcon} alt="Youtube" />
             </a>
           </Col>
         </Row>
@@ -41,7 +44,7 @@ const Footer = () => {
           }}
           color="red"
         >
-          Will Homel 2023
+          &copy; Will Homel 2023
         </p>
       </Container>
     </footer>

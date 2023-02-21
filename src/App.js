@@ -9,7 +9,7 @@ import GamesPage from "./pages/GamesPage";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: "black" }}>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
