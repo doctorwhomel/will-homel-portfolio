@@ -105,7 +105,7 @@ class ReactstrapImageGallery extends React.Component {
             }}
           >
             <Row>
-              <Col md="6">
+              <Col md="12">
                 <ImageCarousel images={images} currentIndex={currentIndex} />
               </Col>
             </Row>

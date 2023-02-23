@@ -36,7 +36,7 @@ const HomePage = () => {
           <Col>
             <CardImg
               className="mx-auto d-block"
-              style={{ width: "45vw", paddingTop: "24px" }}
+              style={{ width: "45vw", paddingTop: "32px" }}
               src={homel_new_logo_raster}
               alt="Will Homel Developer Logo"
             />
@@ -66,13 +66,15 @@ const HomePage = () => {
                 }}
               >
                 <CardTitle>Games and Animation</CardTitle>
-                <CardImg
-                  src={jack_o_lantern_render}
-                  alt="games and animation"
-                  style={{
-                    borderRadius: "5px 5px 0px 0px",
-                  }}
-                />
+                <a href="/games" class="stretched-link">
+                  <CardImg
+                    src={jack_o_lantern_render}
+                    alt="games and animation"
+                    style={{
+                      borderRadius: "5px 5px 0px 0px",
+                    }}
+                  />
+                </a>
                 <CardBody>
                   <CardText>3D models, games, demos</CardText>
                 </CardBody>
@@ -88,13 +90,15 @@ const HomePage = () => {
                 }}
               >
                 <CardTitle>Film and Video</CardTitle>
-                <CardImg
-                  src={flavorists_dilemma_will_homel_bellingham_comedy_film}
-                  alt="film and video"
-                  style={{
-                    borderRadius: "5px 5px 0px 0px",
-                  }}
-                />
+                <a href="/videos" class="stretched-link">
+                  <CardImg
+                    src={flavorists_dilemma_will_homel_bellingham_comedy_film}
+                    alt="film and video"
+                    style={{
+                      borderRadius: "5px 5px 0px 0px",
+                    }}
+                  />
+                </a>
                 <CardBody>
                   <CardText>short films, promos, social media</CardText>
                 </CardBody>
@@ -110,13 +114,15 @@ const HomePage = () => {
                 }}
               >
                 <CardTitle>Photography</CardTitle>
-                <CardImg
-                  src={pupper}
-                  alt="photography"
-                  style={{
-                    borderRadius: "5px 5px 0px 0px",
-                  }}
-                />
+                <a href="/photos" class="stretched-link">
+                  <CardImg
+                    src={pupper}
+                    alt="photography"
+                    style={{
+                      borderRadius: "5px 5px 0px 0px",
+                    }}
+                  />
+                </a>
                 <CardBody>
                   <CardText>product photos, animals, plants, etc.</CardText>
                 </CardBody>

@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: black;
+  color: black;
 }
 
 .App-logo {
@@ -39,6 +40,10 @@
   }
 }
 
+body{
+  background-color: black;
+}
+
 .card-body{
   background-color: black;
   border-radius: 0px 0px 5px 5px;
@@ -71,4 +76,11 @@ h5{
   padding-bottom: 16px;
 }
 
+.btn{
+  background-color: none;
+}
+
+iframe{
+  display: block;
+}
 

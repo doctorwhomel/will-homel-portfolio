@@ -44,16 +44,6 @@ const Header = () => {
               Photography
             </NavLink>
           </NavItem>
-          <NavItem style={{ paddingLeft: 15 }}>
-            <NavLink className="nav-link" to="/about">
-              About
-            </NavLink>
-          </NavItem>
-          <NavItem style={{ paddingLeft: 15 }}>
-            <NavLink className="nav-link" to="/contact">
-              Contact
-            </NavLink>
-          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>
