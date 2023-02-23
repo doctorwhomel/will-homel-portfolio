@@ -49,11 +49,14 @@ class ImageCarousel extends React.Component {
   render() {
     const { images } = this.props;
     const { activeIndex } = this.state;
-
+    let mediaType;
+    let media;
     const slides = images.map((image) => {
-      let mediaType;
       if (image.albumId === 2) {
-        mediaType = (
+        mediaType = "video";
+      }
+      if (mediaType === "video") {
+        media = (
           <iframe
             src={image.url}
             id="ytplayer"
@@ -68,7 +71,7 @@ class ImageCarousel extends React.Component {
           />
         );
       } else {
-        mediaType = (
+        media = (
           <img
             src={image.url}
             alt={image.title}
@@ -85,37 +88,40 @@ class ImageCarousel extends React.Component {
           onExited={() => this.setAnimating(false)}
           key={image.id}
         >
-          <div className="d-flex justify-content-center mx-auto">
-            {mediaType}
-          </div>
+          <div className="d-flex justify-content-center mx-auto">{media}</div>
         </CarouselItem>
       );
     });
-
-    return (
-      <Carousel
-        activeIndex={activeIndex}
-        next={this.next}
-        previous={this.previous}
-      >
-        <CarouselIndicators
-          items={images}
+    if (mediaType !== "video") {
+      return (
+        <Carousel
           activeIndex={activeIndex}
-          onClickHandler={this.goToIndex}
-        />
-        {slides}
-        <CarouselControl
-          direction="prev"
-          directionText="Previous"
-          onClickHandler={this.previous}
-        />
-        <CarouselControl
-          direction="next"
-          directionText="Next"
-          onClickHandler={this.next}
-        />
-      </Carousel>
-    );
+          next={this.next}
+          previous={this.previous}
+        >
+          <CarouselIndicators
+            items={images}
+            activeIndex={activeIndex}
+            onClickHandler={this.goToIndex}
+          />
+          {slides}
+          <CarouselControl
+            direction="prev"
+            directionText="Previous"
+            onClickHandler={this.previous}
+          />
+          <CarouselControl
+            direction="next"
+            directionText="Next"
+            onClickHandler={this.next}
+          />
+        </Carousel>
+      );
+    } else {
+      return (
+        <div className="d-flex justify-content-center mx-auto">{media}</div>
+      );
+    }
   }
 }
 
