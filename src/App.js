@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import "./App.css";
 import Header from "./components/Header";
@@ -12,10 +12,10 @@ function App() {
     <div className="App" style={{ backgroundColor: "black" }}>
       <Header />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/photos" element={<PhotosPage />} />
-        <Route path="/videos" element={<VideosPage />} />
-        <Route path="/games" element={<GamesPage />} />
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/photos" element={<PhotosPage />} />
+        <Route exact path="/videos" element={<VideosPage />} />
+        <Route exact path="/games" element={<GamesPage />} />
       </Routes>
       <Footer />
     </div>
