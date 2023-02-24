@@ -8,7 +8,6 @@ import {
   CardText,
   CardBody,
   CardTitle,
-  Nav,
 } from "reactstrap";
 import homel_new_logo_raster from "../app/assets/img/homel_new_logo_raster.png";
 import jack_o_lantern_render from "../app/assets/img/jack_o_lantern_render.png";
@@ -16,7 +15,6 @@ import flavorists_dilemma_will_homel_bellingham_comedy_film from "../app/assets/
 import pupper from "../app/assets/img/pupper.jpg";
 import { useSpring, animated } from "react-spring";
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   const [toggle, setToggle] = useState(false);
@@ -68,7 +66,7 @@ const HomePage = () => {
                 }}
               >
                 <CardTitle>Games and Animation</CardTitle>
-                <NavLink className="nav-link" to="/games">
+                <a href="/games">
                   <CardImg
                     src={jack_o_lantern_render}
                     alt="games and animation"
@@ -76,7 +74,7 @@ const HomePage = () => {
                       borderRadius: "5px 5px 0px 0px",
                     }}
                   />
-                </NavLink>
+                </a>
                 <CardBody>
                   <CardText>3D models, games, demos</CardText>
                 </CardBody>
@@ -92,7 +90,7 @@ const HomePage = () => {
                 }}
               >
                 <CardTitle>Film and Video</CardTitle>
-                <NavLink className="nav-link" to="/videos">
+                <a href="/videos">
                   <CardImg
                     src={flavorists_dilemma_will_homel_bellingham_comedy_film}
                     alt="film and video"
@@ -100,7 +98,7 @@ const HomePage = () => {
                       borderRadius: "5px 5px 0px 0px",
                     }}
                   />
-                </NavLink>
+                </a>
                 <CardBody>
                   <CardText>short films, promos, social media</CardText>
                 </CardBody>
@@ -116,7 +114,7 @@ const HomePage = () => {
                 }}
               >
                 <CardTitle>Photography</CardTitle>
-                <NavLink className="nav-link" to="/photos">
+                <a href="/photos">
                   <CardImg
                     src={pupper}
                     alt="photography"
@@ -124,7 +122,7 @@ const HomePage = () => {
                       borderRadius: "5px 5px 0px 0px",
                     }}
                   />
-                </NavLink>
+                </a>
                 <CardBody>
                   <CardText>product photos, animals, plants, etc.</CardText>
                 </CardBody>
