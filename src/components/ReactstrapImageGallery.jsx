@@ -66,7 +66,7 @@ class ReactstrapImageGallery extends React.Component {
                 >
                   <Card
                     className="image-card rounded-0"
-                    style={{ backgroundColor: "black" }}
+                    style={{ backgroundColor: "black", cursor: "pointer" }}
                   >
                     <CardImg src={image.thumbnailUrl} className="rounded-0" />
                     {hasMore !== 0 && index === imagesToShow - 1 ? (
