@@ -119,7 +119,13 @@ class ImageCarousel extends React.Component {
       );
     } else {
       return (
-        <div className="d-flex justify-content-center mx-auto">{media}</div>
+        <Carousel
+          activeIndex={activeIndex}
+          next={this.next}
+          previous={this.previous}
+        >
+          {slides}
+        </Carousel>
       );
     }
   }
