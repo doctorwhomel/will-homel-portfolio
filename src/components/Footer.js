@@ -17,7 +17,7 @@ const Footer = () => {
             </h5>
             <a
               className="btn btn-social-icon"
-              href="http://instagram.com/doctorwhomel/"
+              href="https://www.instagram.com/majesticsquonk/"
             >
               <img src={instaIcon} alt="Instagram" />
             </a>{" "}
