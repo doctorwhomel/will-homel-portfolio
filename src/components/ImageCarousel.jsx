@@ -52,7 +52,7 @@ class ImageCarousel extends React.Component {
     let mediaType;
     let media;
     const slides = images.map((image) => {
-      if (image.albumId === 2) {
+      if (image.albumId === 2 || image.albumId === 6) {
         mediaType = "video";
       }
       if (mediaType === "video") {
