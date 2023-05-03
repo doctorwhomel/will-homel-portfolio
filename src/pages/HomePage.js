@@ -56,6 +56,14 @@ const HomePage = () => {
             </p>
           </Col>
         </Row>
+        <Row style={{ paddingBottom: "24px" }}>
+          <Col>
+            <p className="text-center" id="tagline">
+              * I designed and developed this website myself using HTML, CSS,
+              Javascript, and React
+            </p>
+          </Col>
+        </Row>
         <Row style={{ paddingBottom: "48px" }}>
           <Col lg="4">
             <animated.div style={animatedStyle}>
