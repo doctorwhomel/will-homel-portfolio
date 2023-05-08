@@ -17,7 +17,13 @@ const GamesPage = () => {
       <ReactstrapImageGallery images={ASSETS} limit={12} />
       <h5>
         Have a closer look at my models on{" "}
-        <a href="https://sketchfab.com/majesticsquonk/models">Sketchfab</a>.
+        <a
+          className="h5link"
+          href="https://sketchfab.com/majesticsquonk/models"
+        >
+          Sketchfab
+        </a>
+        .
       </h5>
     </div>
   );
